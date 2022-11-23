@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "l-notice-bar": "/miniprogram_npm/lin-ui/notice-bar/index"
+
+  }
+}

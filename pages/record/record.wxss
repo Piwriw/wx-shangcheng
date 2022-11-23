@@ -1,0 +1,51 @@
+page {
+  background-color: #f8f8f8;
+  font-size: 32rpx;
+}
+/* 我的头像 */
+.avatar {
+  width: 100%;
+  background-color: #1296db;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar button{
+  height:170rpx;
+  padding:0rpx 0rpx 0rpx 0rpx;
+}
+.avatar button image {
+  width: 150rpx;
+  height: 150rpx;
+  /*border-radius: 50%;*/
+  border: 10rpx solid rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* 左侧布局 */
+.content-infoL {
+  display: flex;
+  flex-direction: column;
+}
+.content-time {
+  font-size: 26rpx;
+  color: #999;
+}
+/* 右侧布局 */
+.content-infoR {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.weui-input {
+  width: 150rpx;
+  height: 30rpx;
+}

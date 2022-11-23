@@ -1,0 +1,27 @@
+<scroll-view class="container" scroll-y="true">
+    <block wx:for="{{orderList}}" wx:for-item="item" wx:for-index="idx" wx:key="{{item.order_id}}">
+        <view class="orderList" data-postId="{{item.order_id}}">
+            <!--            <view class="order-content" wx:for="{{item.orderInfo}}" wx:for-item="items" wx:key="orderlist">-->
+            <view class="content-time">下单时间：{{item.payTime}}</view>
+            <view class="content-btm" style='display:flex'>
+                <view class="content-info">
+                    <text class="food-name">{{item.orderInfo[0].name}}</text>
+                    <text class="food-describe">等{{item.orderInfo.length}}件商品</text>
+                    <text class="food-price">￥{{item.sumMonney}}</text>
+                </view>
+            <view class="content-infoR">
+                <!--            <view class="order-detail" catchtap="orderdetail" data-postId="{{item.order_id}}" > 查看详情</view>-->
+                <view class="order-detail" catchtap="orderdetail" data-data="{{item}}">查看详情</view>
+                <view wx:if="{{item.taken}}" class="taken">已取餐</view>
+                <view wx:else class="notaken">未取餐</view>
+            </view>
+            </view>
+            <view class="divLine"></view>
+
+        </view>
+</block>
+<view class="bottom" wx:if="{{is_last}}">到底啦~</view>
+        </scroll-view>
+<view style=" width: 100%;height: 100rpx; ">
+    <l-tab-bar list="{{list}}"/>
+</view>

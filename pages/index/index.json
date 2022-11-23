@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "l-tab-bar": "/miniprogram_npm/lin-ui/tab-bar/index",
+    "player-component": "plugin://player/video",
+    "l-popup": "/miniprogram_npm/lin-ui/popup/index"
+  }
+}

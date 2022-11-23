@@ -1,0 +1,49 @@
+{
+    "projectname": "shangcheng",
+    "setting": {
+        "compileHotReLoad": false,
+        "urlCheck": false
+    },
+    "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
+    "condition": {
+        "miniprogram": {
+            "list": [
+                {
+                    "name": "",
+                    "pathName": "pages/list/list",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/spend/spend",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/userinfo/userinfo",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/order/balance/balance",
+                    "query": "order_id=testid-1&cartList=%5B%7B%22name%22%3A%22%E7%99%BD%E6%A1%83%E8%BD%AF%E5%BF%83%E8%8D%89%E8%8E%93%E8%9B%8B%E7%B3%95%22%2C%22price%22%3A%2248%22%2C%22number%22%3A1%7D%5D",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/list/list",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                }
+            ]
+        }
+    }
+}

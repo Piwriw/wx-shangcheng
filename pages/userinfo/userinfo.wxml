@@ -1,0 +1,2 @@
+<!--pages/userinfo/userinfo.wxml-->
+<l-input label="昵称"  disabled="{{true}}"  value="{{nickName}}" />

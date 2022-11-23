@@ -1,0 +1,20 @@
+<view class="avatar">
+    <button   open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+        <image  mode="aspectFill"  src="{{avatarUrl}}"></image>
+    </button>
+    <input  type="nickname" class="weui-input" value="{{nickName}}" bindinput="getNickName"  placeholder="请输入昵称"/>
+
+    <!--        <image  class="avatarimg" bind:tap="goRegistered"   src="https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0"/>-->
+</view>
+<l-list title="个人中心" icon="user" bind:lintap="goUserinfo"/>
+<l-list title="消费记录" icon="notification"
+        badge-count="999" badge-position="right" link-type="navigateTo" url="/pages/spend/spend"/>
+<l-list title="客服" icon="phone" bind:lintap="callOffer"/>
+<view style=" width: 100%;height: 100rpx; ">
+    <l-tab-bar list="{{list}}"/>
+</view>
+<l-dialog
+        show="{{isDig}}"
+        type="alert"
+        title="提示"
+        content="还没有获取到昵称或者头像" />
